@@ -1,0 +1,22 @@
+softdepend: [Votifier]
+
+name: BetterDailyReward
+main: fr.dailyreward.Main
+
+author: LeGarri
+version: 1.2
+
+api-version: 1.13
+
+commands:
+  dreward:
+    description: open reward menu
+    usage: /dreward
+    
+permissions:
+  dreward.use:
+    description: use the command
+    default: op
+  dreward.admin:
+    description: use the reload command /dreward reload
+    default: op

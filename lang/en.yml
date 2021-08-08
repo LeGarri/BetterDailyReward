@@ -1,0 +1,22 @@
+##########################################################
+#                                                        #
+#     __  __ ______  _____ _____         _____ ______    #
+#    |  \/  |  ____|/ ____/ ____|  /\   / ____|  ____|   #
+#    | \  / | |__  | (___| (___   /  \ | |  __| |__      #
+#    | |\/| |  __|  \___ \\___ \ / /\ \| | |_ |  __|     #
+#    | |  | | |____ ____) |___) / ____ \ |__| | |____    #
+#    |_|  |_|______|_____/_____/_/    \_\_____|______|   #
+#                                                        #
+#                                                        #
+##########################################################
+#
+# Here you can modify messages sended by the plugin.
+#
+
+config-reload: "&aConfig reloaded"
+permission-deny: "&cYou doesn't have the permission to do that"
+reward-menu-title: "&cBetter daily reward"
+reward-already-claimed: "&cYou have already received your reward"
+claim-reward: "&aReward claimed"
+vote-required: "&cYou doesn't have the %vote% vote required"
+time-required: "&cYou need to play %time% secondes today"

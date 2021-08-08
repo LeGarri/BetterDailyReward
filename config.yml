@@ -1,0 +1,78 @@
+####################################################
+#                                                  #
+#       _____ ____  _   _ ______ _____ _____       #
+#      / ____/ __ \| \ | |  ____|_   _/ ____|      #
+#     | |   | |  | |  \| | |__    | || |  __       #
+#     | |   | |  | | . ` |  __|   | || | |_ |      #
+#     | |___| |__| | |\  | |     _| || |__| |      #
+#      \_____\____/|_| \_|_|    |_____\_____|      #
+#                                                  #
+#                                                  #
+####################################################
+#
+# Author: LeGarri
+#
+# This is the config file for BetterDailyReward
+#
+#####################################################
+
+
+lang: "en"    #You can directly change message in lang/en.yml or create a file in the folder and write the name of the file here without ".yml"
+
+reset-day: true    #If the player doesn't take his reward one day then he goes back to the first one
+
+
+#####################################################
+#  
+#  Each day the value increment for player if is take the reward, you cannot skip day in config.
+#  When the player reaches the last day he returns to the first day. You can put as many days as you want.
+#
+#  How create a day reward
+#
+#  day1:  (the day you want, you can not put 2 times the same)
+#    day: 1  (this number must be the same as above)
+#    item:  (Here you will configure the item that will be displayed in the reward menu)
+#      name: "&aDay 1"  (required, the name of the item)
+#      lore:  (optional, you can set the lore of the item here.)
+#        - "&aline 1"
+#        - "&eline 2"
+#      material: GOLD_INGOT  (required, the item that will be displayed. List of all item: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+#      customModelData: 4  (optional, if you use texture pack on your server with custom model or texture you can set the value here)
+#      amount: 1  (required, This is the number of stacked items that will be displayed in the menu)
+#    condition:  (optional, Here must be placed condition(s) to claim the reward. Currently there are 2 possible conditions)
+#      vote: 1 (The number of votes required to claim the reward. NUVOTIFIER OR VOTIFIER IS REQUIRED TO USE THIS)
+#      playTime: 1800  (The playing time in seconds required to claim the reward)
+#    commands:  (required, Here must be placed the command(s) that will be executed when the player recovers his reward)
+#      - "give %player% gold_ingot 16"  (%player% will be automatically remplaced by the name of the player)
+#      - "give %player% diamond 1"
+#
+#
+#
+#####################################################
+
+
+reward:
+  day1:
+    day: 1
+    item:
+      name: "&aJour 1"
+      lore:
+        - "&e16 lingots d'or"
+      material: GOLD_INGOT
+      customModelData: 2
+      amount: 16
+    condition:
+      vote: 2
+      playTime: 1800
+    commands:
+      - "give %player% gold_ingot 16"
+      - "msg %player% reward day 1"
+  day2:
+    day: 2
+    item:
+      name: "32 lingots d'or"
+      material: GOLD_INGOT
+      amount: 32
+    commands:
+      - "give %player% gold_ingot 32"
+      - "msg %player% reward day 2"
